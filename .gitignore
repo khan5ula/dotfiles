@@ -19,3 +19,8 @@ pavucontrol.ini
 user-dirs.dirs
 user-dirs.locale
 rofi/
+Thunar/
+Electron/
+GIMP/
+peazip/
+xfce4/help.rc

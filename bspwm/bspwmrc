@@ -30,8 +30,7 @@ bash ~/scripts/touchpad_settings.sh
 polybar hansubar &
 xsetroot -cursor_name left_ptr &
 nitrogen --restore
-megasync &
-sleep 2 && megasync &
+~/scripts/init_megasync.sh
 xfce-power-manager &
 dunst &
 nm-applet &

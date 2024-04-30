@@ -164,3 +164,15 @@ XF86MonBrightnessUp
 # Decrease screen brightness
 XF86MonBrightnessDown
   ~/scripts/brightness_down.sh
+
+# Move the focused window to the next monitor
+super + shift + Right
+    bspc node -m next
+
+# Move the focused window to the previous monitor
+super + shift + Left
+    bspc node -m prev
+
+# Take a screenshot
+Print
+  ~/scripts/take_screenshot.sh
