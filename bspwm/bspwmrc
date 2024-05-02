@@ -23,8 +23,8 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-bash ~/scripts/touchpad_settings.sh
-
+~/scripts/touchpad_settings.sh
+killall polybar
 polybar hansubar &
 xsetroot -cursor_name left_ptr &
 nitrogen --restore
@@ -32,4 +32,5 @@ nitrogen --restore
 xfce-power-manager &
 dunst &
 nm-applet &
+blueman-applet &
 picom
