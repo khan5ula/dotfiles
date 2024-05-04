@@ -23,7 +23,9 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
+unclutter -idle 3 &
 ~/scripts/touchpad_settings.sh
+libinput-gestures-setup start &
 killall polybar
 polybar hansubar &
 xsetroot -cursor_name left_ptr &

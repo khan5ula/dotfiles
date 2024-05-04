@@ -11,11 +11,12 @@
     sort = yes
     font = monospace 12
     stack_duplicates = true
-    hide_duplicate_count = true 
+    hide_duplicate_count = true
     icon_position = left
     min_icon_size = 32
     max_icon_size = 32
     corner_radius = 5
+    progress_bar_corner_radius = 2
 
 [urgency_low]
     background = "#ebbcba"

@@ -185,7 +185,7 @@ XF86AudioPlay
 XF86AudioStop
   playerctl play-pause
 
-# Media Player - Previous
+# Media Player - Previous 
 XF86AudioPrev
   playerctl previous
 
