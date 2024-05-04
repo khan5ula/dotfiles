@@ -138,7 +138,7 @@ XF86Calculator
   qalculate-gtk
 
 # thunderbird
-super + alt + b
+{super + alt + b, XF86Mail}
   thunderbird
 
 # text editor
@@ -192,3 +192,11 @@ XF86AudioPrev
 # Media Player - Next
 XF86AudioNext
   playerctl next
+
+# Rotate tree
+super + shift + {d,a}
+    bspc node @/ -C {forward,backward}
+
+# Lock screen
+super + shift + x 
+  betterlockscreen -l
