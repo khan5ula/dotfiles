@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + @space
-	~/.config/rofi/launchers/type-6/./launcher.sh
+	~/.config/rofi/launchers/type-2/./launcher.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -120,14 +120,13 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-# browser
-super + shift + Return
-	firefox
-
-
 #
 # customs
 #
+
+# browser
+super + shift + Return
+	firefox
 
 # file explorer
 super + {e}
@@ -197,6 +196,22 @@ XF86AudioNext
 super + shift + {d,a}
     bspc node @/ -C {forward,backward}
 
-# Lock screen
-super + shift + x 
-  betterlockscreen -l
+# Move the focused window to the right
+super + alt + Right
+    bspc node -s east
+
+# Move the focused window the left
+super + alt + Left
+  bspc node -s west
+
+# Move the focused window up
+super + alt + Up
+  bspc node -s north
+
+# Move the focused window down
+super + alt + Down
+  bspc node -s south
+
+# Toggle touchpad ON/OFF
+super + alt + y
+  ~/scripts/touchpad_on_off.sh
