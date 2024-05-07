@@ -174,7 +174,7 @@ super + shift + Left
 
 # Take a screenshot
 Print
-  ~/scripts/take_screenshot.sh
+  /home/kristian/.config/rofi/applets/bin/screenshot.sh
 
 # Media Player - Play
 XF86AudioPlay
@@ -214,4 +214,9 @@ super + alt + Down
 
 # Toggle touchpad ON/OFF
 super + alt + y
-  ~/scripts/touchpad_on_off.sh
+ ~/scripts/touchpad_on_off.sh
+ 
+# Toggle power menu
+super + alt + @space
+ /home/kristian/.config/rofi/applets/bin/powermenu.sh
+
