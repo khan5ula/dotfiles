@@ -3,6 +3,7 @@
 setxkbmap fi &
 numlockx &
 pgrep -x sxhkd >/dev/null || sxhkd &
+brightnessctl --device='platform::kbd_backlight' set 1 &
 
 bspc config ignore_ewmh_fullscreen true
 

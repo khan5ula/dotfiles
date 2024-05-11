@@ -8,8 +8,9 @@ background_oapcity 0.50
 map ctrl+shift+up next_window
 map ctrl+shift+down previous_window
 tab_bar_style powerline
+enable_audio_bell no
 
 # BEGIN_KITTY_THEME
-# Kaolin Ocean
+# Challenger Deep
 include current-theme.conf
 # END_KITTY_THEME
