@@ -1,5 +1,7 @@
 {
   "extras": [
+    "lazyvim.plugins.extras.editor.leap",
+    "lazyvim.plugins.extras.editor.trouble-v3",
     "lazyvim.plugins.extras.formatting.prettier",
     "lazyvim.plugins.extras.lang.clangd",
     "lazyvim.plugins.extras.lang.docker",
@@ -15,7 +17,7 @@
     "lazyvim.plugins.extras.util.dot"
   ],
   "news": {
-    "NEWS.md": "4885"
+    "NEWS.md": "4964"
   },
-  "version": 3
+  "version": 4
 }

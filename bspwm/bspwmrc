@@ -9,7 +9,8 @@ bspc config ignore_ewmh_fullscreen true
 
 ~/scripts/dual_monitor.sh
 
-bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+bspc monitor eDP -d 1 2 3 4 5 6 7 8 9 10
+bspc monitor DVI-I-2-1 -d 󱡶
 
 bspc config border_width 1
 bspc config window_gap 20
@@ -28,13 +29,13 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 unclutter -idle 3 &
-~/scripts/touchpad_settings.sh
+~/scripts/touchpad_settings.sh &
 libinput-gestures-setup start &
 killall polybar
 polybar hansubar &
 xsetroot -cursor_name left_ptr &
 nitrogen --restore
-~/scripts/init_megasync.sh
+~/scripts/init_megasync.sh &
 xfce-power-manager &
 dunst &
 nm-applet &
