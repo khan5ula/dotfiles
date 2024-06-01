@@ -14,10 +14,11 @@
     "lazyvim.plugins.extras.lang.typescript",
     "lazyvim.plugins.extras.lang.yaml",
     "lazyvim.plugins.extras.linting.eslint",
+    "lazyvim.plugins.extras.ui.mini-indentscope",
     "lazyvim.plugins.extras.util.dot"
   ],
   "news": {
     "NEWS.md": "4964"
   },
-  "version": 4
+  "version": 5
 }

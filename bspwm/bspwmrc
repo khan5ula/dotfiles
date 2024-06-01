@@ -33,6 +33,7 @@ unclutter -idle 3 &
 libinput-gestures-setup start &
 killall polybar
 polybar hansubar &
+polybar secondbar &
 xsetroot -cursor_name left_ptr &
 nitrogen --restore
 ~/scripts/init_megasync.sh &

@@ -17,6 +17,7 @@
     max_icon_size = 32
     corner_radius = 5
     progress_bar_corner_radius = 2
+    origin = bottom-right
 
 [urgency_low]
     background = "#ebbcba"
