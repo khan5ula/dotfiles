@@ -10,8 +10,6 @@ bspc config ignore_ewmh_fullscreen true
 ~/scripts/dual_monitor.sh
 
 bspc monitor eDP -d 1 2 3 4 5 6 7 8 9 10
-bspc monitor DVI-I-2-1 -d 󱡶
-
 bspc config border_width 1
 bspc config window_gap 20
 
@@ -27,6 +25,18 @@ bspc rule -a Gimp state=floating follow=on
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+bspc rule -a pavucontrol state=floating
+bspc rule -a blueman-manager state=floating
+bspc rule -a Blueman-manager state=floating
+bspc rule -a qalculate-gtk state=floating
+bspc rule -a Qalculate-gtk state=floating
+bspc rule -a Nitrogen state=floating
+bspc rule -a MEGAsync state=floating
+bspc rule -a svelte-tauri state=tiled desktop=󱡶
+bspc rule -a Svelte-tauri state=tiled desktop=󱡶
+#bspc rule -a svelte-tauri state=tiled desktop=3
+#bspc rule -a Svelte-tauri state=tiled desktop=3
+#bspc rule -a '*' state=floating
 
 unclutter -idle 3 &
 ~/scripts/touchpad_settings.sh &

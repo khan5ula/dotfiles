@@ -130,7 +130,7 @@ super + shift + Return
 
 # file explorer
 super + {e}
-  GTK_THEME=rose-pine-gtk thunar
+  thunar
 
 # calculator
 XF86Calculator
