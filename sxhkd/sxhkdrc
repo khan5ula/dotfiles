@@ -201,11 +201,11 @@ super + alt + Right
     bspc node -s east
 
 # Move the focused window the left
-super + alt + Left
+super + alt + Lef
   bspc node -s west
 
 # Move the focused window up
-super + alt + Up
+super + alt + U
   bspc node -s north
 
 # Move the focused window down
@@ -215,8 +215,7 @@ super + alt + Down
 # Toggle touchpad ON/OFF
 super + alt + y
  ~/scripts/touchpad_on_off.sh
- 
+
 # Toggle power menu
 super + alt + @space
  /home/kristian/.config/rofi/applets/bin/powermenu.sh
-

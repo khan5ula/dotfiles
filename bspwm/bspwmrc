@@ -10,8 +10,13 @@ bspc config ignore_ewmh_fullscreen true
 ~/scripts/dual_monitor.sh
 
 bspc monitor eDP -d 1 2 3 4 5 6 7 8 9 10
+xidlehook --not-when-audio --not-when-fullscreen --timer 360 '/home/kristian/scripts/lock.sh' '' &
 bspc config border_width 1
 bspc config window_gap 20
+bspc top_monocle_padding 5
+bspc bottom_monocle_padding 5
+bspc left_monocle_padding 5
+bspc right_monocle_padding 5
 
 bspc config focused_border_color "#ea9a97"
 bspc config active_border_color "#191724"
@@ -19,7 +24,7 @@ bspc config normal_border_color "#191724"
 
 bspc config split_ratio 0.52
 bspc config borderless_monocle true
-bspc config gapless_monocle true
+bspc config gapless_monocle false
 
 bspc rule -a Gimp state=floating follow=on
 bspc rule -a mplayer2 state=floating
@@ -32,6 +37,7 @@ bspc rule -a qalculate-gtk state=floating
 bspc rule -a Qalculate-gtk state=floating
 bspc rule -a Nitrogen state=floating
 bspc rule -a MEGAsync state=floating
+bspc rule -a "YouTube Music" state=floating
 bspc rule -a svelte-tauri state=tiled desktop=󱡶
 bspc rule -a Svelte-tauri state=tiled desktop=󱡶
 #bspc rule -a svelte-tauri state=tiled desktop=3
@@ -47,7 +53,6 @@ polybar secondbar &
 xsetroot -cursor_name left_ptr &
 nitrogen --restore
 ~/scripts/init_megasync.sh &
-xfce-power-manager &
 dunst &
 nm-applet &
 blueman-applet &

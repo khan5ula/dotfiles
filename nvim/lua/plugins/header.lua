@@ -7,8 +7,8 @@ return {
     opts = function(_, opts)
       math.randomseed(os.time())
 
-      local random_index = math.random(#ascii_arts)
-      local logo = ascii_arts[random_index]
+      -- local random_index = math.random(#ascii_arts)
+      local logo = ascii_arts[3]
 
       local fortune = io.popen("misfortune -s", "r")
       local fortune_output
