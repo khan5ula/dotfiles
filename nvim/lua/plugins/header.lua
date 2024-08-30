@@ -7,19 +7,21 @@ return {
     opts = function(_, opts)
       math.randomseed(os.time())
 
-      -- local random_index = math.random(#ascii_arts)
-      local logo = ascii_arts[3]
+      local random_index = math.random(#ascii_arts)
+      local logo = ascii_arts[random_index]
+      -- local logo = ascii_arts[2]
 
-      local fortune = io.popen("misfortune -s", "r")
-      local fortune_output
-      if fortune then
-        fortune_output = fortune:read("*a")
-        fortune:close()
-      else
-        fortune_output = "No fortune today."
-      end
+      -- --local fortune = io.popen("misfortune -s", "r")
+      -- local fortune_output
+      -- if fortune then
+      --   fortune_output = fortune:read("*a")
+      --   fortune:close()
+      -- else
+      --   fortune_output = "No fortune today."
+      -- end
 
-      logo = logo .. "\n" .. fortune_output .. "\n"
+      --logo = logo .. "\n" .. fortune_output .. "\n"
+
       opts.config.header = vim.split(logo, "\n")
     end,
   },

@@ -219,3 +219,7 @@ super + alt + y
 # Toggle power menu
 super + alt + @space
  /home/kristian/.config/rofi/applets/bin/powermenu.sh
+
+# Toggle music playerctl
+super + shift + m
+  audacious
