@@ -140,10 +140,6 @@ XF86Calculator
 {super + alt + b, XF86Mail}
   thunderbird
 
-# text editor
-super + alt + t
-  notepadqq
-
 # toggle mute
 XF86AudioMute
   ~/scripts/volume_mute.sh
@@ -223,3 +219,7 @@ super + alt + @space
 # Toggle music playerctl
 super + shift + m
   audacious
+
+# Lock screen
+super + F1
+  betterlockscreen -l

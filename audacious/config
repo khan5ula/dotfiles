@@ -1,8 +1,8 @@
 
 [audacious]
-repeat=TRUE
 resume_playback_on_startup=FALSE
 show_numbers_in_pl=TRUE
+shuffle=TRUE
 
 [audgui]
 filesel_path=/home/kristian
@@ -49,8 +49,8 @@ close_button_visible=FALSE
 column_widths=25,25,275,175,50,271,175,38,100,25,69,275,275,275,75,275,175,75
 entry_count_visible=TRUE
 infoarea_show_art=FALSE
-player_height=862
-player_width=1439
+player_height=859
+player_width=1437
 playlist_columns=playing title artist album queued length track genre
 playlist_headers_bold=TRUE
 statusbar_visible=FALSE
@@ -69,3 +69,6 @@ skin=/usr/share/audacious/Skins/Default
 
 [skins-layout]
 search-tool-qt=586,360,288,192
+
+[statusicon]
+close_to_tray=TRUE

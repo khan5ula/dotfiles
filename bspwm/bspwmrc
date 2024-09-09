@@ -9,18 +9,20 @@ bspc config ignore_ewmh_fullscreen true
 
 ~/scripts/dual_monitor.sh
 
+#bspc wm --reorder-monitors eDP DVI-I-3-2
 bspc monitor eDP -d 1 2 3 4 5 6 7 8 9 10
+bspc desktop '^10' --layout monocle
 xidlehook --not-when-audio --not-when-fullscreen --timer 360 '/home/kristian/scripts/lock.sh' '' &
-bspc config border_width 1
+bspc config border_width 3
 bspc config window_gap 20
 bspc top_monocle_padding 5
 bspc bottom_monocle_padding 5
 bspc left_monocle_padding 5
 bspc right_monocle_padding 5
 
-bspc config focused_border_color "#ea9a97"
-bspc config active_border_color "#191724"
-bspc config normal_border_color "#191724"
+bspc config focused_border_color "#babbf1"
+bspc config active_border_color "#303446"
+bspc config normal_border_color "#303446"
 
 bspc config split_ratio 0.52
 bspc config borderless_monocle true
@@ -38,11 +40,11 @@ bspc rule -a Qalculate-gtk state=floating
 bspc rule -a Nitrogen state=floating
 bspc rule -a MEGAsync state=floating
 bspc rule -a "YouTube Music" state=floating
-bspc rule -a svelte-tauri state=tiled desktop=󱡶
-bspc rule -a Svelte-tauri state=tiled desktop=󱡶
-#bspc rule -a svelte-tauri state=tiled desktop=3
-#bspc rule -a Svelte-tauri state=tiled desktop=3
-#bspc rule -a '*' state=floating
+# bspc rule -a "Audacious" state=floating
+bspc rule -a Audacious desktop=^9
+bspc rule -a "Proton Mail Bridge" desktop=^10
+bspc rule -a thunderbird desktop=^10
+bspc rule -a firefox desktop=^1
 
 unclutter -idle 3 &
 ~/scripts/touchpad_settings.sh &
@@ -52,8 +54,11 @@ polybar hansubar &
 polybar secondbar &
 xsetroot -cursor_name left_ptr &
 nitrogen --restore
+eval "$(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg)"
+export SSH_AUTH_SOCK
 ~/scripts/init_megasync.sh &
 dunst &
 nm-applet &
 blueman-applet &
+~/scripts/init_mail.sh &
 picom

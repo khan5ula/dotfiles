@@ -45,4 +45,4 @@ require("lazy").setup({
   },
 })
 
-require("config.neo-tree")
+--require("config.neo-tree")
