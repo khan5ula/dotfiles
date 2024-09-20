@@ -28,7 +28,7 @@ super + {_,shift + }q
 
 # alternate between the tiled and monocle layout
 super + m
-	bspc desktop -l next
+  sh -c 'bspc desktop -l next && STATUS=$(bspc query -T -d | jq -r ".layout") && notify-send -t 800 "Toggled layout to ${STATUS}"'
 
 # send the newest marked node to the newest preselected node
 super + y
@@ -216,10 +216,10 @@ super + alt + y
 super + alt + @space
  /home/kristian/.config/rofi/applets/bin/powermenu.sh
 
-# Toggle music playerctl
-super + shift + m
-  audacious
-
 # Lock screen
 super + F1
   betterlockscreen -l
+
+# Bring floating findow above others
+super + F2
+  bspc node -l above

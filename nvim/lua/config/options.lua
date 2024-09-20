@@ -4,3 +4,4 @@
 local opt = vim.opt
 opt.wrap = false
 --vim.g.root_spec = { "cwd" }
+--vim.g.lazyvim_python_lsp = "pyright"

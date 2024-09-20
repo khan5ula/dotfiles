@@ -2,12 +2,12 @@
 [audacious]
 resume_playback_on_startup=FALSE
 show_numbers_in_pl=TRUE
-shuffle=TRUE
 
 [audgui]
 filesel_path=/home/kristian
 
 [audqt]
+queue_manager_visible=TRUE
 theme=dark
 
 [globalHotkey]
@@ -41,8 +41,8 @@ NumHotkeys=8
 actions=FALSE
 
 [pipewire]
-volume_left=65
-volume_right=65
+volume_left=45
+volume_right=45
 
 [qtui]
 close_button_visible=FALSE
