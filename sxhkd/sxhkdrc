@@ -28,7 +28,7 @@ super + {_,shift + }q
 
 # alternate between the tiled and monocle layout
 super + m
-  sh -c 'bspc desktop -l next && STATUS=$(bspc query -T -d | jq -r ".layout") && notify-send -t 800 "Toggled layout to ${STATUS}"'
+  sh -c 'bspc desktop -l next && STATUS=$(bspc query -T -d | jq -r ".layout") && DESKTOP=$(bspc query -T -d | jq -r ".name" ) && notify-send -t 800 "Toggled layout on desktop ${DESKTOP} to ${STATUS}"'
 
 # send the newest marked node to the newest preselected node
 super + y
@@ -223,3 +223,7 @@ super + F1
 # Bring floating findow above others
 super + F2
   bspc node -l above
+
+# Toggle do not disturb mode
+super + n
+  ~/scripts/do_not_disturb.sh
