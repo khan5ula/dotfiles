@@ -227,3 +227,43 @@ super + F2
 # Toggle do not disturb mode
 super + n
   ~/scripts/do_not_disturb.sh
+
+# numpad 1 - focus desktop 1 / move node to desktop 1
+super + {_,shift + }KP_End
+  bspc {desktop -f,node -d} ^1
+
+# numpad 2 - focus desktop 2 / move node to desktop 2
+super + {_,shift + }KP_Down
+  bspc {desktop -f,node -d} ^2
+
+# numpad 3 - focus desktop 3 / move node to desktop 3
+super + {_,shift + }KP_Next
+  bspc {desktop -f,node -d} ^3
+
+# numpad 4 - focus desktop 4 / move node to desktop 4
+super + {_,shift + }KP_Left
+  bspc {desktop -f,node -d} ^4
+
+# numpad 5 - focus desktop 5 / move node to desktop 5
+super + {_,shift + }KP_Begin
+  bspc {desktop -f,node -d} ^5
+
+# numpad 6 - focus desktop 6 / move node to desktop 6
+super + {_,shift + }KP_Right
+  bspc {desktop -f,node -d} ^6
+
+# numpad 7 - focus desktop 7 / move node to desktop 7
+super + {_,shift + }KP_Home
+  bspc {desktop -f,node -d} ^7
+
+# numpad 8 - focus desktop 8 / move node to desktop 8
+super + {_,shift + }KP_Up
+  bspc {desktop -f,node -d} ^8
+
+# numpad 9 - focus desktop 9 / move node to desktop 9
+super + {_,shift + }KP_Prior
+  bspc {desktop -f,node -d} ^9
+
+# numpad 0 - focus desktop 10 / move node to desktop 10
+super + {_,shift + }KP_Insert
+  bspc {desktop -f, node -d} 10
