@@ -10,6 +10,10 @@ super + Return
 super + @space
 	~/.config/rofi/launchers/type-2/./launcher.sh
 
+# program launcher
+F1
+	~/.config/rofi/launchers/type-2/./launcher.sh
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -28,7 +32,7 @@ super + {_,shift + }q
 
 # alternate between the tiled and monocle layout
 super + m
-  sh -c 'bspc desktop -l next && STATUS=$(bspc query -T -d | jq -r ".layout") && DESKTOP=$(bspc query -T -d | jq -r ".name" ) && notify-send -t 800 "Toggled layout on desktop ${DESKTOP} to ${STATUS}"'
+  sh -c 'bspc desktop -l next && STATUS=$(bspc query -T -d | jq -r ".layout")'
 
 # send the newest marked node to the newest preselected node
 super + y
@@ -126,7 +130,7 @@ super + {Left,Down,Up,Right}
 
 # browser
 super + shift + Return
-	firefox
+  zen-browser	
 
 # file explorer
 super + {e}
@@ -216,6 +220,10 @@ super + alt + y
 super + alt + @space
  /home/kristian/.config/rofi/applets/bin/powermenu.sh
 
+# Toggle power menu
+F2
+ /home/kristian/.config/rofi/applets/bin/powermenu.sh
+
 # Lock screen
 super + F1
   betterlockscreen -l
@@ -223,6 +231,14 @@ super + F1
 # Bring floating findow above others
 super + F2
   bspc node -l above
+
+# Toggle VPN switch
+super + F3
+  fish -c ~/scripts/vpn_toggler.fish 
+
+# New note
+super + F12
+  noted n -g
 
 # Toggle do not disturb mode
 super + n

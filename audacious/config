@@ -41,12 +41,12 @@ NumHotkeys=8
 actions=FALSE
 
 [pipewire]
-volume_left=30
-volume_right=30
+volume_left=40
+volume_right=40
 
 [qtui]
 close_button_visible=FALSE
-column_widths=25,25,275,175,50,271,175,38,100,25,69,275,275,275,75,275,175,75
+column_widths=25,25,255,175,50,271,175,38,100,25,69,275,275,275,75,275,175,75
 entry_count_visible=TRUE
 infoarea_show_art=FALSE
 player_height=859
