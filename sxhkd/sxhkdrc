@@ -11,7 +11,7 @@ super + @space
 	~/.config/rofi/launchers/type-2/./launcher.sh
 
 # program launcher
-F1
+alt + F1
 	~/.config/rofi/launchers/type-2/./launcher.sh
 
 # make sxhkd reload its configuration files:
@@ -221,7 +221,7 @@ super + alt + @space
  /home/kristian/.config/rofi/applets/bin/powermenu.sh
 
 # Toggle power menu
-F2
+alt + F2
  /home/kristian/.config/rofi/applets/bin/powermenu.sh
 
 # Lock screen

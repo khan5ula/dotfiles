@@ -41,8 +41,8 @@ NumHotkeys=8
 actions=FALSE
 
 [pipewire]
-volume_left=40
-volume_right=40
+volume_left=55
+volume_right=55
 
 [qtui]
 close_button_visible=FALSE

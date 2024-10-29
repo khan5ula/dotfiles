@@ -49,6 +49,7 @@ bspc rule -a Slack desktop=^8
 bspc rule -a "oy-interact-tira-TIRACodersApp" state=floating
 bspc rule -a Yad state=floating
 bspc rule -a Nm-connection-editor state=floating
+bspc rule -a Xarchiver state=floating
 
 unclutter -idle 3 &
 ~/scripts/touchpad_settings.sh &
