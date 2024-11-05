@@ -42,7 +42,8 @@ bspc rule -a MEGAsync state=floating
 bspc rule -a Audacious desktop=^9
 bspc rule -a "Proton Mail Bridge" desktop=^10
 bspc rule -a thunderbird desktop=^10
-bspc rule -a zen-browser desktop=^1
+bspc rule -a firefox desktop=^1
+bspc rule -a Firefox desktop=^1
 bspc rule -a zoom desktop=^7
 bspc rule -a zoom state=floating
 bspc rule -a Slack desktop=^8
@@ -50,6 +51,7 @@ bspc rule -a "oy-interact-tira-TIRACodersApp" state=floating
 bspc rule -a Yad state=floating
 bspc rule -a Nm-connection-editor state=floating
 bspc rule -a Xarchiver state=floating
+bspc rule -a Emacs state=tiled
 
 unclutter -idle 3 &
 ~/scripts/touchpad_settings.sh &
@@ -66,4 +68,7 @@ dunst &
 nm-applet &
 blueman-applet &
 ~/scripts/init_mail.sh &
+if ! nmcli con show --active | grep -wv ipv6leak | grep vpn >/dev/null 2>&1; then
+  ~/scripts/vpn_toggler.fish &
+fi
 picom

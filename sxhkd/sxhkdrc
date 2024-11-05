@@ -130,7 +130,7 @@ super + {Left,Down,Up,Right}
 
 # browser
 super + shift + Return
-  zen-browser	
+ firefox 
 
 # file explorer
 super + {e}
@@ -283,3 +283,7 @@ super + {_,shift + }KP_Prior
 # numpad 0 - focus desktop 10 / move node to desktop 10
 super + {_,shift + }KP_Insert
   bspc {desktop -f, node -d} 10
+
+# Disable middle button paste
+~button2
+    ;echo -n | xclip -in
